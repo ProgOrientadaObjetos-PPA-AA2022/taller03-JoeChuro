@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paqueteuno;
+package paquete001;
 
 /**
  *
@@ -13,10 +13,11 @@ public class Ejecutor {
     public static void main(String[] args) {
         // Crear un objeto de tipo FacturaTelefono
         FacturaTelefono ft = new FacturaTelefono();
+        FacturaTelefono ft2 = new FacturaTelefono();
         // Valores de entrada
         String numeroTelefono = "098321321";
-        double minutos = 230;
-        double valorMinuto = 0.25;
+        double minutos = 100;
+        double valorMinuto = 1.10;
         // uso de los métodos establecer para darle valores a los 
         // atributos del objeto.
         ft.establecerNumeroTelefono(numeroTelefono);
@@ -32,12 +33,17 @@ public class Ejecutor {
         
         ft.calcularValorFactura();
         
+        ft2.establecerMinutosMes(200);
+        ft2.establecerNumeroTelefono("09876s");
+        ft2.establecerValorMinuto(0.20);
+        
+        ft2.calcularValorFactura();
         // Se hace uso de los métodos obtener para presentar en pantalla lo 
         // requerido
-        System.out.printf("Factura de Teléfono\n\nNúmero de teléfono: %s\n"
-                + "Minutos mensuales: %.2f\nValor por minuto: %.2f\n"
-                + "Valor a cancelar: %.2f\n", ft.obtenerNumeroTelefono(),
-                ft.obtenerMinutosMes(), ft.obtenerValorMinuto(),
-                ft.obtenerValorFactura());
+        System.out.printf("Factura de Teléfono\n\n\tNúmero de teléfono: %s\n"
+                + "Minutos mensuales: %.2f\n\tValor por minuto: %.2f\n"
+                + "Valor a cancelar: %.2f\n", ft2.obtenerNumeroTelefono(),
+                ft2.obtenerMinutosMes(), ft2.obtenerValorMinuto(),
+                ft2.obtenerValorFactura());
     }
 }
