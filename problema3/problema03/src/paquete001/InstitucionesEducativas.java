@@ -35,14 +35,14 @@ public class InstitucionesEducativas {
     }
 
     public void establecerNumeroSedes(int c) {
-        numeroAlumnos = c;
+        numeroSedes = c;
     }
 
     public void establecerGastos(double c) {
         gastos = c;
     }
 
-    public void calcularPresupuesto(double c) {
+    public void calcularPresupuesto() {
         presupuesto = numeroAlumnos * gastos;
     }
 
@@ -63,7 +63,7 @@ public class InstitucionesEducativas {
     }
 
     public int obtenerNumeroSedes() {
-        return numeroAlumnos;
+        return numeroSedes;
     }
 
     public double obtenerGastos() {

@@ -10,18 +10,18 @@ package paquete001;
  */
 public class Terreno {
 
-    private double anchoTerreno;
-    private double largoTerreno;
+    private double ancho;
+    private double largo;
     private double valorMetro;
     private double valorArea;
     private double costo_terreno;
 
     public void establecerAnchoTerreno(double c) {
-        anchoTerreno = c;
+        ancho = c;
     }
 
     public void establecerLargoTerreno(double c) {
-        largoTerreno = c;
+        largo = c;
     }
 
     public void establecerValorMetro(double c) {
@@ -29,7 +29,7 @@ public class Terreno {
     }
 
     public void calcularArea() {
-        valorArea = anchoTerreno * largoTerreno;
+        valorArea = ancho * largo;
 
     }
 
@@ -39,11 +39,11 @@ public class Terreno {
     }
 
     public double obtenerAnchoTerreno() {
-        return anchoTerreno;
+        return ancho;
     }
 
     public double obtenerLargoTerreno() {
-        return largoTerreno;
+        return largo;
     }
 
     public double obtenerValorMetro() {
